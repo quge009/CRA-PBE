@@ -1,0 +1,2 @@
+time =334855
+efficiency =0.2
