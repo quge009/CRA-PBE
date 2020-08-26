@@ -51,7 +51,7 @@ public class DutchFPSB {
 //		...DutchFPSB2.config
 //		...\OutputDutchFPSB3\Round1 <-saved round1 strats
 //		...\OutputDutchFPSB3\Round2 <-saved round2 strats
-//		...\OutputDutchFPSB3 <-saves setup
+//		...\OutputDutchFPSB3 <-saves setup 
 		
 		//measure time
 		long startTime = System.nanoTime();
