@@ -71,9 +71,10 @@ public class DutchFPSB {
 		//contextRound1.setVerifier(new BoundingVerifier1Dto2D(contextRound1));		
 		
 		// instanciate auction setting
-		double efficiency=0.9; //public cost efficiency parameter C that determines cost of split award.
-		double minV=1.0;
-		double maxV=2.0;
+		double maxV = Double.parseDouble(contextRound1.config.get("auction.maxv"));
+		double minV=Double.parseDouble(contextRound1.config.get("auction.minv"));
+		double efficiency=Double.parseDouble(contextRound1.config.get("auction.efficiency")); //public cost efficiency parameter C that determines cost of split award.
+
 		//contextRound1.setMechanism(new DutchFPSBRound1(efficiency,contextRound1,utilities#)); // done in callbackmidit
 		contextRound1.setSampler(new DutchFPSBRound1Sampler(contextRound1));
 		
@@ -102,7 +103,7 @@ public class DutchFPSB {
 		PBEAlgorithm<Double,Round2Value,Double[],Double> pbeAlgo = new PBEAlgorithm<>(2,contextRound1);
 		
 		// add bidders (for bne round 2 done in callback since depends on histories)
-		pbeAlgo.setInitialStrategy(0, PWCStrategy1Dto2D.makeTruthful(minV,maxV, efficiency));//TODO set with gridsize?
+		pbeAlgo.setInitialStrategy(0, PWCStrategy1Dto2D.makeTruthful(minV,maxV, efficiency));
 		pbeAlgo.makeBidderSymmetric(1, 0);
 		
 		//put bne round into pbe round1
