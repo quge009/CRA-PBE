@@ -3,7 +3,7 @@
 
 This is a piece of software used for numerically computing approximate Perfect Bayesian equilibria (ε-PBEs) of two-round combinatorial reverse auctions. Our algorithm is described in detail in the thesis:
 
-**PBE Algorithm for Multi-RoundAuctions**  
+**PBE Algorithm for Multi-Round Auctions**  
 Vinzenz Thoma, ETH Zürich 2020
 
 If you use this software for academic purposes, please cite the above in your work.
