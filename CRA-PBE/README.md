@@ -97,6 +97,8 @@ It should be run as a configuration with the following five input arguments
 		...\OutputDutchFPSB\Round1 <-saved round1 strats
 		...\OutputDutchFPSB\Round2 <-saved round2 strats
 		...\OutputDutchFPSB <-saves setup
+		
+In the output folders of this repository, these files (input & output) are provided for different settings. The setupt and output strategies can then in turn be read by the R scripts in these folders. All one needs to do is set the working directory to the parent folder and then run the script to produce the animated/non-animated plots showing the strategies and comparing to analytical predictions. 
 
 
 
