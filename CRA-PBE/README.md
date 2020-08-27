@@ -89,6 +89,16 @@ Finally, we run the algorithm
 
 	PBEAlgorithm.Result<Double,Double[]> result;
 	result = pbeAlgo.run();
+	
+It should be run as a configuration with the following five input arguments
+
+		...DutchFPSB1.config - the config file of first round context
+		...DutchFPSB2.config - the config file of second round context
+		...\OutputDutchFPSB\Round1 <-saved round1 strats
+		...\OutputDutchFPSB\Round2 <-saved round2 strats
+		...\OutputDutchFPSB <-saves setup
+
+
 
 
 
